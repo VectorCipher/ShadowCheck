@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Video Deepfake Detector",
+  "version": "1.0.0",
+  "description": "Capture tab Video",
+  "permissions": [
+    "tabCapture",
+    "activeTab",
+    "scripting",
+    "tabs",
+    "offscreen"
+  ],
+  "host_permissions": [
+    "http://localhost:8000/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type":"module"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
